@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "@/app/ui/styles/globals.css";
 
 import BackgroundWrapper from "@/app/ui/shared/BackgroundWrapper";
+import TheNavbar from "@/app/ui/shared/TheNavbar";
 
 export const metadata: Metadata = {
   title: "Home - Space Travel",
@@ -17,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <BackgroundWrapper>{children}</BackgroundWrapper>
+        <BackgroundWrapper>
+          <TheNavbar />
+          {children}
+        </BackgroundWrapper>
       </body>
     </html>
   );
