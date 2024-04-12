@@ -1,0 +1,13 @@
+.exploreButton {
+  @apply w-[150px] md:w-[242px] lg:w-[450px] text-gray-950 font-normal tracking-widest text-xl md:text-[32px] uppercase bg-white relative grid z-10 place-items-center rounded-full aspect-square;
+}
+
+.exploreButton::after {
+  @apply absolute inset-0 bg-white rounded-full opacity-10 transition-transform duration-500 ease-in-out;
+  content: "";
+}
+
+.exploreButton:hover::after,
+.exploreButton:focus::after {
+  @apply scale-150;
+}
