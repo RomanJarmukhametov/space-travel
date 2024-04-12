@@ -17,12 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <BackgroundWrapper>
-          <TheNavbar />
-          {children}
-        </BackgroundWrapper>
-      </body>
+      <BackgroundWrapper>
+        <TheNavbar />
+        {children}
+      </BackgroundWrapper>
     </html>
   );
 }

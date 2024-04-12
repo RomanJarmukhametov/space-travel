@@ -32,7 +32,7 @@ const BackgroundWrapper = ({ children }: BackgroundWrapperProps) => {
       currentPath as keyof typeof backgroundImageClasses
     ] || "";
 
-  return <main className={backgroundClass}>{children}</main>;
+  return <body className={backgroundClass}>{children}</body>;
 };
 
 export default BackgroundWrapper;
