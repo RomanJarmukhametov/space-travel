@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import "@/app/ui/shared/globals.css";
+import "@/app/ui/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Home - Space Travel",
