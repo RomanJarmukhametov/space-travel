@@ -52,6 +52,9 @@ const DestinationTab = () => {
                     <Image
                       src={destination.image}
                       alt={destination.name}
+                      priority={true}
+                      placeholder="blur"
+                      blurDataURL={destination.image}
                       width={450}
                       height={450}
                       className="object-cover rounded-lg"
