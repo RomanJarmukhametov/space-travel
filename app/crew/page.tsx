@@ -1,12 +1,17 @@
 import TheSubheading from "@/app/ui/shared/TheSubheading";
+import CrewSwiper from "@/app/ui/crew/CrewSwiper";
 
 const Crew = () => {
   return (
-    <main className="container mx-auto px-4 py-8 sm:py-12 md:py-16 lg:py-20">
-      <TheSubheading level="1">
-        <span className="font-bold opacity-25 mr-3">02</span>
-        meet your crew
-      </TheSubheading>
+    <main className="container mx-auto px-4 pt-8 sm:pt-12 md:pt-16 lg:pt-20">
+      <div className="h-full flex flex-col gap-20 justify-end">
+        <TheSubheading level="1">
+          <span className="font-bold opacity-25 mr-3">02</span>
+          meet your crew
+        </TheSubheading>
+
+        <CrewSwiper />
+      </div>
     </main>
   );
 };
