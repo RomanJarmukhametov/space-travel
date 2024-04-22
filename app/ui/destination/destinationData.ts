@@ -1,4 +1,13 @@
-export const destinations = [
+interface Destination {
+  id: number;
+  name: string;
+  image: string;
+  description: string;
+  distance: string;
+  travel: string;
+}
+
+export const destinations: Destination[] = [
   {
     id: 1,
     name: "Moon",
