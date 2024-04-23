@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import TheSubheading from "@/app/ui/shared/TheSubheading";
 import CrewSwiper from "@/app/ui/crew/CrewSwiper";
+
+export const metadata: Metadata = {
+  title: "Crew - Space Travel",
+  description: "Meet the crew that will take you to space!",
+};
 
 const Crew = () => {
   return (

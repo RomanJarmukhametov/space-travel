@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import TheSubheading from "@/app/ui/shared/TheSubheading";
 import DestinationTab from "@/app/ui/destination/DestinationTab";
+
+export const metadata: Metadata = {
+  title: "Destination - Space Travel",
+  description: "Pick your destination for your next space travel adventure!",
+};
+
 const Destination = () => {
   return (
     <main className="container mx-auto px-4 py-8 sm:py-12 md:py-16 lg:py-20">

@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
 import BodyText from "@/app/ui/shared/BodyText";
 import TheSubheading from "@/app/ui/shared/TheSubheading";
 import TheHeading from "@/app/ui/shared/TheHeading";
 import ExploreButton from "@/app/ui/homepage/ExploreButton";
+
+export const metadata: Metadata = {
+  title: "Home - Space Travel",
+  description: "Book your next space travel adventure with us!",
+};
 
 const Home = () => {
   return (
