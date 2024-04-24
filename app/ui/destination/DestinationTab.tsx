@@ -78,11 +78,9 @@ const DestinationTab = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start">
-                      <TheHeading level="2">{destination.name}</TheHeading>
-                    </div>
-
+                    <TheHeading level="2">{destination.name}</TheHeading>
                     <BodyText>{destination.description}</BodyText>
+
                     <div className="mt-10 py-5 flex flex-col md:flex-row items-center justify-center lg:items-start lg:justify-start gap-3 md:gap-8 border-t-[1px] border-gray-700">
                       <div className="flex flex-col gap-3 items-center justify-center lg:items-start lg:justify-start">
                         <TheSubheading level="2">Avg. Distance</TheSubheading>

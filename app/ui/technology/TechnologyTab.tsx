@@ -7,7 +7,6 @@ import { bellefair } from "@/app/ui/styles/fonts";
 
 import TheHeading from "@/app/ui/shared/TheHeading";
 import BodyText from "@/app/ui/shared/BodyText";
-import TheSubheading from "@/app/ui/shared/TheSubheading";
 
 import { technologies } from "@/app/ui/technology/technologyData";
 
@@ -45,6 +44,7 @@ const TechnologyTab = () => {
             {technologies.map((technology) => (
               <Tab.Panel key={technology.id}>
                 <div className="flex flex-col lg:flex-row items-start justify-center gap-8">
+                  {/* TODO: for screens below large ones place this image above tabs */}
                   <div className="flex-1 lg:hidden">
                     <Image
                       src={technology.imageLandscape}
@@ -57,17 +57,11 @@ const TechnologyTab = () => {
                   </div>
 
                   <div className="flex-1">
-                    <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start">
-                      <p
-                        className={`${bellefair.className} opacity-50 text-white text-2xl font-normal uppercase`}>
-                        {technology.subheading}
-                      </p>
-                    </div>
-
-                    <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start text-center lg:text-start">
-                      <TheHeading level="3">{technology.heading}</TheHeading>
-                    </div>
-
+                    <p
+                      className={`${bellefair.className} opacity-50 text-white text-2xl font-normal uppercase text-center lg:text-left`}>
+                      {technology.subheading}
+                    </p>
+                    <TheHeading level="3">{technology.heading}</TheHeading>
                     <BodyText>{technology.description}</BodyText>
                   </div>
 

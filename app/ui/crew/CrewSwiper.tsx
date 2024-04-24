@@ -68,14 +68,12 @@ const CrewSwiper: React.FC = () => {
         leaveTo="opacity-0"
         className={"flex flex-col lg:flex-row lg:gap-40"}>
         <div className="flex-1">
-          <div className="mb-3 flex flex-col items-center justify-center lg:items-start lg:justify-start">
-            <p
-              className={`${bellefair.className} opacity-50 text-white text-2xl font-normal uppercase`}>
-              {crew[currentIndex].position}
-            </p>
-          </div>
+          <p
+            className={`${bellefair.className} opacity-50 text-white text-2xl font-normal uppercase text-center lg:text-left mb-3`}>
+            {crew[currentIndex].position}
+          </p>
 
-          <div className="mb-3 flex flex-col items-center justify-center lg:items-start lg:justify-start">
+          <div className="mb-3">
             <TheHeading level="3">{crew[currentIndex].name}</TheHeading>
           </div>
 

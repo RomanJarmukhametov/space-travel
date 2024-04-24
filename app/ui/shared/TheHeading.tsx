@@ -11,15 +11,15 @@ const Heading: React.FC<HeadingProps> = ({ level, children }) => {
   const getHeadingClass = (): string => {
     switch (level) {
       case "1":
-        return `${bellefair.className} antialiased text-[5rem] leading-[6.25rem] md:text-[9.375rem] md:leading-[9.375rem]`;
+        return `${bellefair.className} antialiased text-[5rem] leading-[6.25rem] md:text-[9.375rem] md:leading-[9.375rem] text-center lg:text-left`;
       case "2":
-        return `${bellefair.className} antialiased text-[3.5rem] md:text-[5rem] lg:text-[6.25rem]`;
+        return `${bellefair.className} antialiased text-[3.5rem] md:text-[5rem] lg:text-[6.25rem] text-center lg:text-left`;
       case "3":
-        return `${bellefair.className} antialiased text-[1.5rem] md:text-[2.5rem] lg:text-[3.5rem]`;
+        return `${bellefair.className} antialiased text-[1.5rem] md:text-[2.5rem] lg:text-[3.5rem] text-center lg:text-left`;
       case "4":
-        return `${bellefair.className} antialiased text-[1rem] md:text-[1.5rem] lg:text-[2rem]`;
+        return `${bellefair.className} antialiased text-[1rem] md:text-[1.5rem] lg:text-[2rem] text-center lg:text-left`;
       case "5":
-        return `${barlow.className} antialiased text-[.875rem] md:text-[1rem] md:tracking-[0.1688rem] lg:text-[1.75rem] lg:tracking-[0.1875rem]`;
+        return `${barlow.className} antialiased text-[.875rem] md:text-[1rem] md:tracking-[0.1688rem] lg:text-[1.75rem] lg:tracking-[0.1875rem] text-center lg:text-left`;
     }
   };
 

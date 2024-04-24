@@ -7,7 +7,7 @@ interface SubheadingProps {
 
 const Subheading: React.FC<SubheadingProps> = ({ level, children }) => {
   const getSubheadingClasses = (): string => {
-    let classes = `${barlow.className} antialiased font-normal uppercase`;
+    let classes = `${barlow.className} antialiased font-normal uppercase text-center lg:text-left`;
 
     switch (level) {
       case "1":

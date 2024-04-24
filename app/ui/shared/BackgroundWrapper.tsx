@@ -30,7 +30,8 @@ const BackgroundWrapper = ({ children }: BackgroundWrapperProps) => {
   let backgroundClass: string =
     backgroundImageClasses[
       currentPath as keyof typeof backgroundImageClasses
-    ] || "";
+    ] ||
+    "h-screen w-screen bg-cover bg-[url('/assets/home/background-home-mobile.jpg')] md:bg-[url('/assets/home/background-home-tablet.jpg')] lg:bg-[url('/assets/home/background-home-desktop.jpg')]";
 
   return <body className={backgroundClass}>{children}</body>;
 };
