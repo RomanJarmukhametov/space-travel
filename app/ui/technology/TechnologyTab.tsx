@@ -1,3 +1,19 @@
+/**
+ * A component that displays a tabbed interface for various technologies. Each tab contains detailed information
+ * about a technology including an image, description.
+ *
+ * Utilizes `@headlessui/react` for the tab functionality and `framer-motion` for the fade transitions between tabs.
+ * The tabs display technology names and the panels display technology details, which animate on change.
+ *
+ * @component
+ * @returns {JSX.Element} The component renders a full-width tab group with each tab corresponding to a technology.
+ * Each panel within the tab group contains an image of the technology, a heading, a description.
+ *
+ * @example
+ * // How to render the technologyTab component in a page
+ * <TechnologyTab />
+ */
+
 "use client";
 
 import Image from "next/image";
